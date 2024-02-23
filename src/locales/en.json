@@ -1,6 +1,17 @@
 {
   "home": {
-    "presentation": "Developer Test from Hiberus"
+    "presentation": "Developer Test from Hiberus",
+    "made": "Made by",
+    "technologies": "Main Technologies Used",
+    "and": "and",
+    "block": "The other technologies and libraries used can be found in the",
+    "structure": "Project Structure",
+    "description1": "The project is divided into 2 parts, the backend and the frontend.",
+    "description2": "The backend is developed in Symfony 7 and the database uses PostgreSQL.",
+    "description3": "For the frontend was used Vue 3 and Tailwind CSS for the styles.",
+    "description4": "Additionally Docker and Docker Compose are used to assemble and run the projects.",
+    "credit": "Credits",
+    "socials": "Socials"
   },
   "header": {
     "administration": "Administration",

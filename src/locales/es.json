@@ -1,6 +1,17 @@
 {
   "home": {
-    "presentation": "Prueba Técnica para Hiberus"
+    "presentation": "Prueba Técnica para Hiberus",
+    "made": "Realizado por",
+    "technologies": "Principales Tecnologías Utilizadas",
+    "and": "y",
+    "block": "Las demás tecnologías y librerías utilizadas se pueden encontrar en el",
+    "structure": "Estructura del Proyecto",
+    "description1": "El proyecto está dividido en 2 partes, el backend y el frontend.",
+    "description2": "El backend está desarrollado en Symfony 7 y para la base de datos utiliza PostgreSQL",
+    "description3": "Para el frontend se utilizó Vue 3 y Tailwind CSS para los estilos",
+    "description4": "Adicionalmente se utiliza Docker y Docker Compose para montar y correr los proyectos",
+    "credits": "Créditos",
+    "socials": "Redes Sociales"
   },
   "header": {
     "administration": "Administración",

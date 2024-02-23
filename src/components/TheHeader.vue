@@ -5,11 +5,11 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
 </script>
 
 <template>
-  <header class="m-2 rounded bg-stone-800 p-5 text-neutral-200">
+  <header class="m-2 rounded bg-stone-800 p-5 text-zinc-200">
     <nav class="flex flex-row items-center gap-8">
       <RouterLink
         to="/"
-        class="w-28 flex-none rounded p-3 text-center text-2xl font-semibold hover:bg-neutral-200 hover:text-stone-800"
+        class="w-28 flex-none rounded p-3 text-center text-2xl font-semibold hover:bg-zinc-200 hover:text-stone-800"
         >Xalok</RouterLink
       >
       <Popover class="relative w-auto flex-initial font-semibold" v-slot="{ open }">
