@@ -14,7 +14,7 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
       >
       <Popover class="relative w-auto flex-initial font-semibold" v-slot="{ open }">
         <PopoverButton class="inline-flex gap-x-1.5 rounded p-3 hover:bg-stone-700">
-          Administration
+          {{ $t("header.administration") }}
           <ChevronDownIcon class="-mr-1 h-5 w-5" :class="{ 'rotate-180 transform': open }" />
         </PopoverButton>
 
@@ -27,7 +27,7 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
           leave-to-class="translate-y-1 opacity-0"
         >
           <PopoverPanel
-            class="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0"
+            class="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-4 sm:px-0"
           >
             <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
               <div class="relative grid gap-8 bg-white p-7">
@@ -39,8 +39,8 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
                     <TruckIcon class="text-stone-700" />
                   </div>
                   <div class="ml-4">
-                    <p class="text-sm font-medium text-stone-700">Vehicles</p>
-                    <p class="text-sm text-stone-500">Create, List, Edit and Delete Vehicles</p>
+                    <p class="text-sm font-medium text-stone-700">{{ $t("header.vehicles") }}</p>
+                    <p class="text-sm text-stone-500">{{ $t("header.vehiclesDescription") }}</p>
                   </div>
                 </RouterLink>
                 <RouterLink
@@ -51,8 +51,8 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
                     <IdentificationIcon class="text-stone-700" />
                   </div>
                   <div class="ml-4">
-                    <p class="text-sm font-medium text-stone-700">Drivers</p>
-                    <p class="text-sm text-stone-500">Create, List, Edit and Delete Drivers</p>
+                    <p class="text-sm font-medium text-stone-700">{{ $t("header.drivers") }}</p>
+                    <p class="text-sm text-stone-500">{{ $t("header.driversDescription") }}</p>
                   </div>
                 </RouterLink>
               </div>
@@ -64,7 +64,7 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
         to="/about"
         class="w-16 flex-initial rounded p-3 text-center font-semibold hover:bg-stone-700"
       >
-        Trips
+        {{ $t("header.trips") }}
       </RouterLink>
     </nav>
   </header>

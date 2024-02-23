@@ -1,5 +1,13 @@
 {
   "home": {
     "presentation": "Prueba Técnica para Hiberus"
+  },
+  "header": {
+    "administration": "Administración",
+    "trips": "Viajes",
+    "vehicles": "Vehículos",
+    "vehiclesDescription": "Crear, Listar, Editar y Eliminar Vehículos",
+    "drivers": "Conductores",
+    "driversDescription": "Crear, Listar, Editar y Eliminar Conductores"
   }
 }

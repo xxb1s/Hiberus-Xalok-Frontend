@@ -1,5 +1,13 @@
 {
   "home": {
     "presentation": "Developer Test from Hiberus"
+  },
+  "header": {
+    "administration": "Administration",
+    "trips": "Trips",
+    "vehicles": "Vehicles",
+    "vehiclesDescription": "Create, List, Edit and Delete Vehicles",
+    "drivers": "Drivers",
+    "driversDescription": "Create, List, Edit and Delete Drivers"
   }
 }
