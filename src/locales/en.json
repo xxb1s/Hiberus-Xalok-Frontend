@@ -55,5 +55,14 @@
     "surnamePlaceholder": "Enter the Surname",
     "licence": "Licence",
     "licencePlaceholder": "Enter the Licence"
+  },
+  "trips": {
+    "create": "Create New Trip",
+    "date": "Trip Date",
+    "datePlaceholder": "Select a date for the trip",
+    "vehicles": "Vehicles Available",
+    "vehiclePlate": "Vehicle Plate",
+    "drivers": "Drivers Available",
+    "driverName": "Driver's Name"
   }
 }

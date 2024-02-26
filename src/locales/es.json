@@ -55,5 +55,14 @@
     "surnamePlaceholder": "Introduce los Apellidos",
     "licence": "Licencia",
     "licencePlaceholder": "Introduce la Licencia"
+  },
+  "trips": {
+    "create": "Registrar Viaje Nuevo",
+    "date": "Fecha del Viaje",
+    "datePlaceholder": "Seleccione una fecha para el viaje",
+    "vehicles": "Vehículos Disponibles",
+    "vehiclePlate": "Placa del Vehiculo",
+    "drivers": "Conductores Disponibles",
+    "driverName": "Nombre del Conductor"
   }
 }
