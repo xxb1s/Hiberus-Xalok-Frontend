@@ -1,4 +1,9 @@
 {
+  "general": {
+    "return": "Regresar",
+    "actions": "Acciones",
+    "cancel": "Cancelar"
+  },
   "home": {
     "presentation": "Prueba Técnica para Hiberus",
     "made": "Realizado por",
@@ -20,5 +25,20 @@
     "vehiclesDescription": "Crear, Listar, Editar y Eliminar Vehículos",
     "drivers": "Conductores",
     "driversDescription": "Crear, Listar, Editar y Eliminar Conductores"
+  },
+  "vehicles": {
+    "create": "Registrar Vehículo Nuevo",
+    "edit": "Editar Vehículo",
+    "delete": "Eliminar Vehículo",
+    "deleteDescription": "Esto eliminara el vehículo seleccionado",
+    "deleteBody": "¿Está seguro de esto? Está acción no se puede deshacer",
+    "brand": "Marca",
+    "brandPlaceholder": "Introduce la Marca",
+    "model": "Modelo",
+    "modelPlaceholder": "Introduce el Modelo",
+    "plate": "Placa",
+    "platePlaceholder": "Introduce la Placa",
+    "licence": "Licencia",
+    "licencePlaceholder": "Introduce la Licencia"
   }
 }

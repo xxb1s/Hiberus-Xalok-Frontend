@@ -1,4 +1,9 @@
 {
+  "general": {
+    "return": "Return",
+    "actions": "Actions",
+    "cancel": "Cancel"
+  },
   "home": {
     "presentation": "Developer Test from Hiberus",
     "made": "Made by",
@@ -20,5 +25,20 @@
     "vehiclesDescription": "Create, List, Edit and Delete Vehicles",
     "drivers": "Drivers",
     "driversDescription": "Create, List, Edit and Delete Drivers"
+  },
+  "vehicles": {
+    "create": "Create New Vehicle",
+    "edit": "Edit Vehicle",
+    "delete": "Delete Vehicle",
+    "deleteDescription": "This will delete the selected vehicle",
+    "deleteBody": "Are you sure about this? This action cannot be undone",
+    "brand": "Brand",
+    "brandPlaceholder": "Introduce the Brand",
+    "model": "Model",
+    "modelPlaceholder": "Introduce the Model",
+    "plate": "Plate",
+    "platePlaceholder": "Introduce the Plate",
+    "licence": "Licence",
+    "licencePlaceholder": "Introduce the Licence"
   }
 }
