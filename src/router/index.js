@@ -33,6 +33,28 @@ const router = createRouter({
           component: () => import('../components/VehicleForm.vue')
         }
       ]
+    },
+    {
+      path: '/drivers',
+      name: 'drivers general',
+      component: () => import('../views/DriverView.vue'),
+      children: [
+        {
+          path: '',
+          name: 'list drivers',
+          component: () => import('../components/DriverList.vue')
+        },
+        {
+          path: 'create',
+          name: 'create drivers',
+          component: () => import('../components/DriverForm.vue')
+        },
+        {
+          path: ':id/edit',
+          name: 'edit driver',
+          component: () => import('../components/DriverForm.vue')
+        }
+      ]
     }
   ]
 })

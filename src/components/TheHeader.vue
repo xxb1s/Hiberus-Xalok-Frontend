@@ -27,9 +27,9 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
           leave-to-class="translate-y-1 opacity-0"
         >
           <PopoverPanel
-            class="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-4 sm:px-0"
+            class="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-4 sm:px-0" v-slot="{ close }"
           >
-            <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
+            <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5" @click="close()">
               <div class="relative grid gap-8 bg-white p-7">
                 <RouterLink
                   to="/vehicles"
@@ -44,7 +44,7 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
                   </div>
                 </RouterLink>
                 <RouterLink
-                  to="/"
+                  to="/drivers"
                   class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-stone-300 focus:outline-none focus-visible:ring"
                 >
                   <div class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-12 sm:w-12">
