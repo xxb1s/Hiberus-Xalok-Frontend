@@ -3,6 +3,12 @@ import { PencilSquareIcon, TrashIcon, PlusIcon } from '@heroicons/vue/16/solid/i
 import { Dialog, DialogDescription, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
 import { ref } from 'vue'
 
+const props = defineProps({
+  isWriteView: {
+    type: Boolean,
+    default: true
+  }
+})
 const isOpenDialog = ref(false);
 
 const closeDialog = () => {
@@ -15,7 +21,7 @@ const openDialog = () => {
 </script>
 
 <template>
-  <RouterLink class="bg-stone-300 text-zinc-800 p-2 rounded hover:bg-stone-800 hover:text-zinc-200 active:ring active:ring-zinc-200 focus:ring focus:ring-zinc-200 flex items-center md:mr-auto" :to="{ name: 'create vehicles'}">
+  <RouterLink v-if="props.isWriteView" class="bg-stone-300 text-zinc-800 p-2 rounded hover:bg-stone-800 hover:text-zinc-200 active:ring active:ring-zinc-200 focus:ring focus:ring-zinc-200 flex items-center md:mr-auto" :to="{ name: 'create vehicles'}">
     {{ $t('vehicles.create') }} <PlusIcon class="h-8 justify-center sm:h-12 sm:w-12"/>
   </RouterLink>
 
@@ -28,7 +34,7 @@ const openDialog = () => {
         <th class="border bg-stone-800 text-zinc-200 border-stone-800">{{ $t('vehicles.model') }}</th>
         <th class="border bg-stone-800 text-zinc-200 border-stone-800">{{ $t('vehicles.plate') }}</th>
         <th class="border bg-stone-800 text-zinc-200 border-stone-800">{{ $t('vehicles.licence') }}</th>
-        <th class="border bg-stone-800 text-zinc-200 border-stone-800">{{ $t('general.actions') }}</th>
+        <th class="border bg-stone-800 text-zinc-200 border-stone-800" v-if="props.isWriteView">{{ $t('general.actions') }}</th>
       </tr>
       </thead>
       <tbody>
@@ -38,7 +44,7 @@ const openDialog = () => {
         <th class="border text-zinc-200 bg-stone-700 border-stone-700 rounded">3</th>
         <th class="border text-zinc-200 bg-stone-700 border-stone-700 rounded">3</th>
         <th class="border text-zinc-200 bg-stone-700 border-stone-700 rounded">3</th>
-        <th class="border text-zinc-200 bg-stone-700 border-stone-700 rounded">
+        <th class="border text-zinc-200 bg-stone-700 border-stone-700 rounded" v-if="props.isWriteView">
           <div class="flex flex-row justify-center">
             <div class="group flex relative">
               <RouterLink as="button" :to="{ name: 'edit vehicle', params: { id: 3 } }" class="bg-stone-300 text-zinc-800 rounded my-2 hover:bg-stone-800 hover:text-zinc-200 active:ring active:ring-zinc-200 focus:ring focus:ring-zinc-200 p-0.5"><PencilSquareIcon class="h-7"/></RouterLink>
@@ -55,7 +61,7 @@ const openDialog = () => {
     </table>
   </div>
 
-  <TransitionRoot appear :show="isOpenDialog" as="template">
+  <TransitionRoot appear :show="isOpenDialog" as="template" v-if="props.isWriteView">
     <Dialog as="div" class="relative z-10">
       <TransitionChild
         as="template"

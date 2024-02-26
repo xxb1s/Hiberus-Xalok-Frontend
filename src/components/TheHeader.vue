@@ -8,7 +8,7 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
   <header class="m-2 rounded bg-stone-800 p-5 text-zinc-200">
     <nav class="flex md:flex-row flex-col items-center gap-8">
       <RouterLink
-        to="/"
+        :to="{ name: 'home' }"
         class="w-28 flex-none rounded p-3 text-center text-2xl font-semibold hover:bg-zinc-200 hover:text-stone-800"
         >Xalok</RouterLink
       >
@@ -32,7 +32,7 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
             <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5" @click="close()">
               <div class="relative grid gap-8 bg-white p-7">
                 <RouterLink
-                  to="/vehicles"
+                  :to="{ name: 'vehicles general' }"
                   class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-stone-300 focus:outline-none focus-visible:ring"
                 >
                   <div class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-12 sm:w-12">
@@ -44,7 +44,7 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
                   </div>
                 </RouterLink>
                 <RouterLink
-                  to="/drivers"
+                  :to="{ name: 'drivers general' }"
                   class="-m-3 flex items-center rounded-lg p-2 transition duration-150 ease-in-out hover:bg-stone-300 focus:outline-none focus-visible:ring"
                 >
                   <div class="flex h-10 w-10 shrink-0 items-center justify-center sm:h-12 sm:w-12">
@@ -61,7 +61,7 @@ import { ChevronDownIcon, IdentificationIcon, TruckIcon } from '@heroicons/vue/1
         </transition>
       </Popover>
       <RouterLink
-        to="/about"
+        :to="{ name: 'trips general' }"
         class="w-16 flex-initial rounded p-3 text-center font-semibold hover:bg-stone-700"
       >
         {{ $t("header.trips") }}

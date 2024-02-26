@@ -55,6 +55,23 @@ const router = createRouter({
           component: () => import('../components/DriverForm.vue')
         }
       ]
+    },
+    {
+      path: '/trips',
+      name: 'trips general',
+      component: () => import('../views/TripView.vue'),
+      children: [
+        {
+          path: '',
+          name: 'list trips',
+          component: () => import('../components/TripList.vue')
+        },
+        {
+          path: 'create',
+          name: 'create trips',
+          component: () => import('../components/TripForm.vue')
+        }
+      ]
     }
   ]
 })
