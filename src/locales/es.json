@@ -29,6 +29,7 @@
   "vehicles": {
     "create": "Registrar Vehículo Nuevo",
     "edit": "Editar Vehículo",
+    "save": "Guardar Vehículo",
     "delete": "Eliminar Vehículo",
     "deleteDescription": "Esto eliminara el vehículo seleccionado",
     "deleteBody": "¿Está seguro de esto? Está acción no se puede deshacer",
@@ -38,6 +39,20 @@
     "modelPlaceholder": "Introduce el Modelo",
     "plate": "Placa",
     "platePlaceholder": "Introduce la Placa",
+    "licence": "Licencia",
+    "licencePlaceholder": "Introduce la Licencia"
+  },
+  "drivers": {
+    "create": "Registrar Conductor Nuevo",
+    "edit": "Editar Conductor",
+    "save": "Guardar Conductor",
+    "delete": "Eliminar Conductor",
+    "deleteDescription": "Esto eliminara al conductor seleccionado",
+    "deleteBody": "¿Está seguro de esto? Está acción no se puede deshacer",
+    "name": "Nombre(s)",
+    "namePlaceholder": "Introduce el(los) Nombre(s)",
+    "surname": "Apellidos",
+    "surnamePlaceholder": "Introduce los Apellidos",
     "licence": "Licencia",
     "licencePlaceholder": "Introduce la Licencia"
   }

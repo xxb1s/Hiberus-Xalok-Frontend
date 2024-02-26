@@ -29,16 +29,31 @@
   "vehicles": {
     "create": "Create New Vehicle",
     "edit": "Edit Vehicle",
+    "save": "Save Vehicle",
     "delete": "Delete Vehicle",
     "deleteDescription": "This will delete the selected vehicle",
     "deleteBody": "Are you sure about this? This action cannot be undone",
     "brand": "Brand",
-    "brandPlaceholder": "Introduce the Brand",
+    "brandPlaceholder": "Enter the Brand",
     "model": "Model",
-    "modelPlaceholder": "Introduce the Model",
+    "modelPlaceholder": "Enter the Model",
     "plate": "Plate",
-    "platePlaceholder": "Introduce the Plate",
+    "platePlaceholder": "Enter the Plate",
     "licence": "Licence",
-    "licencePlaceholder": "Introduce the Licence"
+    "licencePlaceholder": "Enter the Licence"
+  },
+  "drivers": {
+    "create": "Create New Driver",
+    "edit": "Edit Driver",
+    "save": "Save Drivergni",
+    "delete": "Delete Driver",
+    "deleteDescription": "This will delete the selected driver",
+    "deleteBody": "Are you sure about this? This action cannot be undone",
+    "name": "Name(s)",
+    "namePlaceholder": "Enter the Name(s)",
+    "surname": "Surname",
+    "surnamePlaceholder": "Enter the Surname",
+    "licence": "Licence",
+    "licencePlaceholder": "Enter the Licence"
   }
 }
