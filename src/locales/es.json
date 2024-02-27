@@ -64,5 +64,11 @@
     "vehiclePlate": "Placa del Vehiculo",
     "drivers": "Conductores Disponibles",
     "driverName": "Nombre del Conductor"
+  },
+  "validations": {
+    "required": "{field} es obligatorio",
+    "min": "{field} debe de tener al menos {min} caracteres",
+    "max": "{field} debe de tener máximo {max} caracteres",
+    "length": "{field} debe de tener exacto {length} caracteres"
   }
 }

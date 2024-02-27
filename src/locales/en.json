@@ -64,5 +64,11 @@
     "vehiclePlate": "Vehicle Plate",
     "drivers": "Drivers Available",
     "driverName": "Driver's Name"
+  },
+  "validations": {
+    "required": "{field} is required",
+    "min": "{field} must be at least {min} characters",
+    "max": "{field} must be at most {max} characters",
+    "length": "{field} must be exactly {length} characters"
   }
 }
